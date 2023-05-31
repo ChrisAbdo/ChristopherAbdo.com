@@ -82,9 +82,15 @@
 
 @layer components {
   .underline-animation {
-    @apply relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-black before:absolute before:left-0 before:bottom-0;
+    @apply relative;
+    &:before {
+      @apply block w-full h-0.5 origin-right transition-transform duration-300 scale-x-0 bg-black absolute left-0 bottom-0 content-[""];
+    }
     &:hover:before {
       @apply scale-x-100 origin-left;
     }
   }
 }
+
+
+

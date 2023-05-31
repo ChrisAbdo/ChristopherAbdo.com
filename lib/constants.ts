@@ -10,7 +10,7 @@ export const pageVariants = {
     scale: 1.01,
     backgroundColor: "black",
     transition: {
-      delay: 3.5,
+      delay: 2,
       duration: 1.0,
     },
   },
@@ -39,7 +39,7 @@ export const textVariants = {
 export const draw = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (i: any) => {
-    const delay = 1 + i * 0.5;
+    const delay = 1 + i * 0.1;
     return {
       pathLength: 2,
       opacity: 1,

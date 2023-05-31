@@ -12,7 +12,7 @@ export default function AnimatedIntro() {
   React.useEffect(() => {
     const timer = setTimeout(() => {
       setIntroFinished(true);
-    }, 4500); // Update this to match the total animation time
+    }, 3000); // Update this to match the total animation time
 
     return () => clearTimeout(timer);
   }, [setIntroFinished]);

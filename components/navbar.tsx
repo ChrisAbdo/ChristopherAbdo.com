@@ -8,7 +8,7 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <header className="bg-white uppercase">
+    <header className="uppercase sticky top-0">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -48,7 +48,7 @@ export default function Navbar() {
               href={item.href}
               rel="noopener noreferrer"
               target="_blank"
-              className="text-sm font-semibold leading-6 underline-animation"
+              className="text-sm font-bold leading-6 underline-animation"
             >
               {item.name}
             </Link>

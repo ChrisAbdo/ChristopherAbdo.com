@@ -7,6 +7,7 @@ import AnimatedIntro from "@/components/animated-intro";
 import Navbar from "@/components/navbar";
 
 import { VisibilityContext } from "@/context/visibility-context";
+import Layout from "@/components/project-layout/layout";
 
 export default function Home() {
   const [isIntroFinished, setIntroFinished] = React.useState(false);
@@ -18,6 +19,7 @@ export default function Home() {
 
         <Navbar />
         <About />
+        <Layout />
       </VisibilityContext.Provider>
     </div>
   );
